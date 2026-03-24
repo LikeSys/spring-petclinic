@@ -61,7 +61,7 @@ pipeline {
         }
         stage('Docker Container Run') {
             steps {
-                echo 'Docker Container Run'\
+                echo 'Docker Container Run'
                 sshPublisher(publishers: [sshPublisherDesc(configName: 'target', 
                 transfers: [sshTransfer(cleanRemote: false, excludes: '', 
                 execCommand: '''docker rm -f $(docker ps -aq)
