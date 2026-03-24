@@ -5,6 +5,8 @@ pipeline {
         maven 'M3'
     }
     environment {
+        // DOCKER_API_VERSION downgrade
+        DOCKER_API_VERSION = '1.43'
         // 환경 변수 지정
         DOCKER_IMAGE_NAME = "spring-petclinic"
 
