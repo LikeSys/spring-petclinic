@@ -9,7 +9,7 @@ pipeline {
         DOCKER_IMAGE_NAME = "spring-petclinic"
 
         // Credentials
-        DOCKERHUB_CRED = credentials('dockerCredentials')
+        //DOCKERHUB_CRED = credentials('dockerCredentials')
     }
     stages {
         stage('Git Clone') {
